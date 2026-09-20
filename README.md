@@ -2,6 +2,12 @@
 
 An Unreal Engine 5 plugin that brings **LLM-powered AI agents into gameplay**. Each agent is driven by a language model that runs **locally** (on-device `Llama`) or via a **remote endpoint**, letting non-player characters understand natural language, reason about their situation, and act in the world — live, at runtime, while interacting with the player.
 
+> **Status: Work in Progress.** This is an active development plugin — APIs and behavior may change without notice.
+
+## Dependencies
+
+- **Llama-Unreal** — the llama.cpp binding used to run models locally (or via a remote endpoint): https://github.com/getnamo/Llama-Unreal
+
 ## What it does
 
 A gameplay agent is a data-driven bot. An `AAIController` owns the agent's "brain" — an orchestrator component, an LLM session, and optional voice capture — while the pawn itself stays a plain character. The player talks to the agent through chat, the console, or a dialogue HUD; **voice input is transcribed the same way** and fed through the exact same pipeline.
@@ -27,4 +33,8 @@ The agent understands what the player means and responds in-character, either wi
 
 ## Status
 
-Runtime core and editor tooling are in place. Richer episodic memory, session introspection, VRAM/shared-model pooling, a debug overlay, a dialogue HUD, and networking are planned but not yet implemented.
+**Work in progress.** The runtime core and editor tooling are in place. Richer episodic memory, session introspection, VRAM/shared-model pooling, a debug overlay, a dialogue HUD, and networking are planned but not yet implemented.
+
+## License
+
+Released under the [MIT License](LICENSE).
