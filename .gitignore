@@ -1,0 +1,34 @@
+# Unreal Engine build artifacts
+Binaries/
+Intermediate/
+DerivedDataCache/
+Saved/
+
+# Build output
+*.ipa
+*.apk
+*.aab
+*.app
+*.xcodeproj/
+*.xcworkspace/
+
+# Visual Studio
+.vs/
+.vscode/
+*.sln
+*.suo
+*.user
+*.sln.DotSettings
+*.VC.db
+*.VC.VC.opendb
+
+# IDE / OS
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+
+# Editor autosaves / backups
+Backup/
+Backup.*
+*.orig
